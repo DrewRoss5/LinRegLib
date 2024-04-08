@@ -14,6 +14,7 @@ class LinearRegression{
         LinearRegression(std::vector<double> &x, std::vector<double> &y);
         int set_data(std::vector<double> &x, std::vector<double> &y);
         void fit();  
+        void fit(std::vector<double> &x, std::vector<double> &y);
         double calc_val(double independent);   
         double calc_r2();
         // getters

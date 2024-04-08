@@ -92,3 +92,11 @@ void LinearRegression::fit(){
     slope_ = calc_slope(x_sum, y_sum, xy_sum, x_square_sum);
     y_intercept_ = calc_intercept(x_sum, y_sum);
 }
+
+// attempts to set the data the provided x and y values, and then fits the model to those values
+void LinearRegression::fit(std::vector<double> &x, std::vector<double> &y){
+    // attempt to set the data to the provided x and y 
+    if (set_data(x, y) == -1)
+        throw std::length_error("X input and Y input must have the same size");
+    fit();
+}

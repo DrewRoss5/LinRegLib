@@ -7,4 +7,4 @@ add_library(linreglib ${CMAKE_SOURCE_DIR}linreg.cpp ${CMAKE_SOURCE_DIR}linreg.h)
 install(TARGETS linreglib 
             ARCHIVE DESTINATION lib 
             LIBRARY DESTINATION lib 
-            DESTINATION bin)
+            RUNTIME DESTINATION bin)

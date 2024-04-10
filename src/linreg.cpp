@@ -18,6 +18,7 @@ LinearRegression::LinearRegression(std::vector<double> &x, std::vector<double> &
     // attempt to set the data to the provided x and y 
     if (set_data(x, y) == -1)
         throw std::length_error("X input and Y input must have the same size");
+    fit();
 }
 
 // sets the data of a linear regression, returns zero if the data is sent sucessfully, otherwise returns -1

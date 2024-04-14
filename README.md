@@ -3,7 +3,7 @@ A library for simple Linear Regression written in C++
 
 # Roadmap/ToDo:
 <ul>
-  <li>Create a test suite<ul><li>Include performance benchmarks</li></ul></li>
+  <li>Flesh out unit tests.</li>
 </ul>
 
 <h2>API:</h2>

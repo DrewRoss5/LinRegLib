@@ -16,8 +16,10 @@ include(GoogleTest)
 add_library(linreglib ${CMAKE_SOURCE_DIR}linreg.cpp ${CMAKE_SOURCE_DIR}linreg.h)
 
 # add the unit test
+if (CMAKE_BUILD_TYPE MATCHES DEBUG)
 add_executable(linreg_test ${TEST_DIR}linreg_test.cpp ${CMAKE_SOURCE_DIR}linreg.h ${CMAKE_SOURCE_DIR}linreg.cpp)
 target_link_libraries(linreg_test PRIVATE GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main)
+endif (CMAKE_BUILD_TYPE MATCHES DEBUG)
 
 install(TARGETS linreglib 
             ARCHIVE DESTINATION lib 

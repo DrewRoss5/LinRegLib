@@ -4,6 +4,7 @@ A library for simple Linear Regression written in C++
 # Roadmap/ToDo:
 <ul>
   <li>Flesh out unit tests.</li>
+  <li>Add Multiple Linear Regressions</li>
 </ul>
 
 <h2>API:</h2>

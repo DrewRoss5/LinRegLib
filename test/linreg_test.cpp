@@ -7,7 +7,7 @@
 TEST(SimpleLinearRegression, CalculateSlope){
     std::vector<double> x_vals = {1, 2, 3, 4, 5};
     std::vector<double> y_vals = {3, 5, 7, 9, 11};
-    LinearRegression model(x_vals, y_vals);
+    SimpleLinearRegression model(x_vals, y_vals);
     EXPECT_EQ(model.get_slope(), 2);
     x_vals = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     y_vals = {16, 31, 46, 61, 76, 91, 106, 121, 136, 151};
@@ -23,7 +23,7 @@ TEST(SimpleLinearRegression, CalculateSlope){
 TEST(SimpleLinearRegression, CalculateYintercept){
     std::vector<double> x_vals = {1, 2, 3, 4, 5};
     std::vector<double> y_vals = {5, 8, 11, 14, 17};
-    LinearRegression model(x_vals, y_vals);   
+    SimpleLinearRegression model(x_vals, y_vals);   
     EXPECT_EQ(model.get_intercept(), 2);
     x_vals = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     y_vals = {5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
@@ -39,7 +39,7 @@ TEST(SimpleLinearRegression, CalculateYintercept){
 TEST(SimpleLinearRegression, CalculateR2){
     std::vector<double> x_vals = {1, 2, 3, 4, 5};
     std::vector<double> y_vals = {5, 8, 11, 14, 17};
-    LinearRegression model(x_vals, y_vals); 
+    SimpleLinearRegression model(x_vals, y_vals); 
     EXPECT_EQ(model.calc_r2(), 1);
     x_vals = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
     y_vals = {1.5, 4, 6, 7, 10.5, 13, 12, 20, 18, 20, 24, 24, 27, 27, 31};

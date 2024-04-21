@@ -1,3 +1,6 @@
+#ifndef LinRegLib
+#define LinRegLib
+
 #include <vector>
 
 class LinearRegression{
@@ -30,3 +33,5 @@ class SimpleLinearRegression : public LinearRegression{
         double calc_val(double independent);   
         double calc_r2();
 };
+
+#endif
